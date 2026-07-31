@@ -7,9 +7,15 @@ const stage = new Konva.Stage({
     height: HEIGHT
 });
 
-const layer = new Konva.Layer();
+const backgroundLayer = new Konva.Layer();
 
-stage.add(layer);
+const puzzleLayer = new Konva.Layer();
+
+const uiLayer = new Konva.Layer();
+
+stage.add(backgroundLayer);
+stage.add(puzzleLayer);
+stage.add(uiLayer);
 
 // --------------------------
 // Timer
@@ -62,6 +68,5 @@ const welcome = new Konva.Text({
 
 });
 
-layer.add(welcome);
-
-layer.draw();
+uiLayer.add(welcome);
+uiLayer.draw();
