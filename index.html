@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+
+    <title>Brazil Puzzle Challenge</title>
+
+    <link rel="stylesheet" href="style.css">
+
+    <script src="https://cdn.jsdelivr.net/npm/konva@9/konva.min.js"></script>
+</head>
+
+<body>
+
+<header>
+
+    <h1>🇧🇷 Brazil Puzzle Challenge</h1>
+
+    <p>
+        Rebuild Christ the Redeemer using all 30 puzzle pieces!
+    </p>
+
+</header>
+
+<div id="stats">
+
+    <div class="card">
+        ⏱
+        <span id="timer">00:00</span>
+    </div>
+
+    <div class="card">
+        🧩
+        Moves:
+        <span id="moves">0</span>
+    </div>
+
+</div>
+
+<div id="container"></div>
+
+<div id="completeScreen" class="hidden">
+
+    <h2>🎉 Congratulations!</h2>
+
+    <h3>You completed the puzzle!</h3>
+
+    <p id="finalTime"></p>
+
+    <h3>Fun Facts</h3>
+
+    <ul>
+
+        <li>Built in 1931</li>
+
+        <li>Height: 30 metres</li>
+
+        <li>Arm span: 28 metres</li>
+
+        <li>Located in Rio de Janeiro</li>
+
+        <li>One of the New Seven Wonders of the World</li>
+
+    </ul>
+
+    <button onclick="location.reload()">
+        Play Again
+    </button>
+
+</div>
+
+<script src="script.js"></script>
+
+</body>
+
+</html>
